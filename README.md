@@ -38,5 +38,8 @@
 ## dictionary
 
 `dict['key']` -> {A:B} B부분이 프린트된다.
+`dicttionary = {A:[a,b,c,d,e], B:[a,b,c,d]}` -> 가능
+`dict['key']` -> {A:B} B부분이 프린트된다.
+`dict.get('key')
 
 
