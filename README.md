@@ -55,3 +55,9 @@
 
 `output = [fruit for fruit in array if fruit != "초콜릿"]`
 
+---
+
+## 가변매개변수
+
+제일 뒤에 써서 매개변수를 여러개 받는 것. function 이름(매개변수1, 매개변수2, ... , *가변매개변수)
+
