@@ -38,8 +38,12 @@
 ## dictionary
 
 `dict['key']` -> {A:B} B부분이 프린트된다.
-`dicttionary = {A:[a,b,c,d,e], B:[a,b,c,d]}` -> 가능
-`dict['key']` -> {A:B} B부분이 프린트된다.
-`dict.get('key')
 
+`dicttionary = {A:[a,b,c,d,e], B:[a,b,c,d]}` -> 가능
+
+`dict['key']` -> {A:B} B부분이 프린트된다.
+
+`dict.get('key')` -> value값을 들고온다.
+
+값 넣을 때는, `dict[key] = 값` 하면 key:값으로 들어간다.
 
