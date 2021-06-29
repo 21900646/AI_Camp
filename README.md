@@ -92,27 +92,26 @@ a, b = test()
 
 ---
 
-## 파일처리
+## try except
 
-with open("  .txt", "w") as file:
- file.write("hi!")
-
-with open("  .txt", "r") as file:
- file.read()
+try:
+ 예외가 발생할 가능성이 있는 코드
+except:
+ 예외가 발생했을 때 실행할 코드
+else:
+ 예외가 발생하지 않았을 때 실행할 코드
+finally:
+ 무조건 실행할 코드
  
-이렇게 하면 자동으로 파일이 닫힘
+ ---
+ 
+ ## 에러잡기
+ 
+ try:
+ except Exception as exception:
+ 
+### raise 사용하기 (예외를 강제로 발생시킴)
 
----
-
-## format 설정
-
-`print("{}, {}\n".format(z1, z2)`
-
----
-
-## lambda 사용
-
-`print(list(filter(lambda x: x%2==1, numbers)))`
-
-`print(list(filter(lambda x: 3<=x<7, numbers)))`
-
+if    :
+ raise NotImplementedError
+ 
