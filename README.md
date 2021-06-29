@@ -112,5 +112,7 @@ with open("  .txt", "r") as file:
 
 ## lambda 사용
 
-`rint(list(filter(lambda x: x%2==1, numbers)))`
+`print(list(filter(lambda x: x%2==1, numbers)))`
+
+`print(list(filter(lambda x: 3<=x<7, numbers)))`
 
