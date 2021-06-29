@@ -107,3 +107,10 @@ with open("  .txt", "r") as file:
 ## format 설정
 
 `print("{}, {}\n".format(z1, z2)`
+
+---
+
+## lambda 사용
+
+`rint(list(filter(lambda x: x%2==1, numbers)))`
+
