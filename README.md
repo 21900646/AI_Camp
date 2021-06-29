@@ -101,3 +101,9 @@ with open("  .txt", "r") as file:
  file.read()
  
 이렇게 하면 자동으로 파일이 닫힘
+
+---
+
+## format 설정
+
+`print("{}, {}\n".format(z1, z2)`
