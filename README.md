@@ -76,8 +76,16 @@ def 이름(매개변수1, 매개변수2, ... , *가변매개변수)
 
 여러 개의 값 리턴 가능 -> 
 
-def test():
+```def test():
 
 return (10, 20)
 
-a, b = test()
+a, b = test()```
+
+---
+
+## 람다
+
+기능을 매개변수로 전달
+
+`function(funt, list)`
