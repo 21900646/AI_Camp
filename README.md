@@ -89,3 +89,15 @@ a, b = test()
 기능을 매개변수로 전달
 
 `function(funt, list)`
+
+---
+
+## 파일처리
+
+with open("  .txt", "w") as file:
+ file.write("hi!")
+
+with open("  .txt", "r") as file:
+ file.read()
+ 
+이렇게 하면 자동으로 파일이 닫힘
