@@ -171,8 +171,31 @@ def hello():
   
  ```
  
+ 코드실행
+ 
+ > set FLASK_APP=flask_basic.py
+ > flask run
+ 
  ---
  
- 
+```
+import requests
+
+from bs4 import BeautifulSoup
+
+url = 'https://movie.naver.com/movie/sdb/rank/rmovie.nhn'
+
+response = requests.get(url)
+
+source = response.text
+
+soup = BeautifulSoup(source, 'html.parser')
+
+top_list = soup.findAll("div",{"class":"tit3"})
+
+for m in top_list:
+
+  print(m.text.strip())
+```
  
  
