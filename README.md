@@ -178,6 +178,8 @@ def hello():
  
  ---
  
+`!pip install flask-ngrok`
+ 
 ```
 import requests
 
