@@ -51,9 +51,11 @@
 
 ## 리스트 이름 = [표현식 for 반복자 in 반복할 수 있는 것 if 조건문]
 
-`array = ["사과", "자두", "초콜릿", "바나나", "체리"]`
+ ```
+array = ["사과", "자두", "초콜릿", "바나나", "체리"]
 
-`output = [fruit for fruit in array if fruit != "초콜릿"]`
+output = [fruit for fruit in array if fruit != "초콜릿"]
+ ```
 
 ---
 
@@ -93,33 +95,51 @@ a, b = test()
 ---
 
 ## try except
-
+ ```
 try:
+
  예외가 발생할 가능성이 있는 코드
-except:
- 예외가 발생했을 때 실행할 코드
-else:
- 예외가 발생하지 않았을 때 실행할 코드
-finally:
- 무조건 실행할 코드
  
+except:
+
+ 예외가 발생했을 때 실행할 코드
+ 
+else:
+
+ 예외가 발생하지 않았을 때 실행할 코드
+ 
+finally:
+
+ 무조건 실행할 코드
+  ```
+  
  ---
  
  ## 에러잡기
  
+  ```
  try:
+ 
  except Exception as exception:
+  ```
  
 ### raise 사용하기 (예외를 강제로 발생시킴)
 
+ ```
 if    :
+
  raise NotImplementedError
+  ```
  
  ---
  
  ## url 다루는 라이브러리
- `target = reequest.urlopen("http://~ ")`
- `output = target.read()`
+ 
+  ```
+ target = reequest.urlopen("http://~ ")
+ 
+ output = target.read()
+  ```
  
  **beautifulSoup 모듈**
  
