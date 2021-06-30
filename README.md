@@ -154,6 +154,25 @@ if    :
   print("도시:", location.select_one("city").string)
  
  ```
+ 
+ **flask 모듈**
+ 
+``` 
+from flask import Flask
+
+app = Flask(__name__)
+
+
+@app.route("/")
+
+def hello():
+
+  return "<h1>Hello World!</h1>"
+  
+ ```
+ 
  ---
+ 
+ 
  
  
