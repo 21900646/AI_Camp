@@ -115,3 +115,20 @@ finally:
 if    :
  raise NotImplementedError
  
+ ---
+ 
+ ## url 다루는 라이브러리
+ `target = reequest.urlopen("http://~ ")`
+ `output = target.read()`
+ 
+ **beautifulSoup 모듈**
+ 
+ ```
+ from urllib import request
+ 
+ Soup = BeautifulSoup(target, "html.
+ 
+ ```
+ ---
+ 
+ 
