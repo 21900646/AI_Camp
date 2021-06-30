@@ -126,7 +126,10 @@ if    :
  ```
  from urllib import request
  
- Soup = BeautifulSoup(target, "html.
+ soup = BeautifulSoup(target, "html.parser")
+ 
+ for location in soup.select("location"):
+  print("도시:", location.select_one("city").string)
  
  ```
  ---
