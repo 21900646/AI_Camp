@@ -202,5 +202,46 @@ for m in top_list:
 
 ![image](https://user-images.githubusercontent.com/69943167/123911591-f1446a00-d9b6-11eb-8039-b811a567e71a.png)
 
+--- 
+
+## 인코딩
+텍스트 데이터 -> 우리가 읽기 쉬운 글자나 이미지
+
+마이너리는 b'이게 제일 처음에 있다.
+
+**엔트리 포인트**
+python 명령어로 사용한 첫 진입 파일
+
+`__name__ == __뭐더라__`
+
+---
+
+## 생성자
+```
+class Student:
+
+ #클래스 변수
+ count = 0
+ students = []
+ 
+ #클래스 함수
+ @classmethod
+  def print(cls):
+   for student in cls.students:
+    print(str(student))
+
+ def __init__(self, 추가적인 매개변수):
+   self.name = name
+   self.number = number
+   
+ def __del__(self):
+   print("{} - 파괴되었습니다.".format(self.name))
+   
+ def __str__(self)
+   
+student = Student()
+print(str(student)) -> 호출방법
+
+```
 
  
