@@ -255,4 +255,14 @@ print(str(student)) -> 호출방법
 
 `code = compile(""" ~~~ """)`
 
+---
+
+## *args & **kwargs
+
+*args : 개수 상관없이 input 받기 (list)
+
+**kwargs : 개수 상관없이 input 받기 (dictionary)
+
+## 
+
  
