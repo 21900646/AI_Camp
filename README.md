@@ -266,6 +266,27 @@ print(str(student)) -> 호출방법
 ## emulating switch/case with dicts
 
 ![image](https://user-images.githubusercontent.com/69943167/124235515-4962a400-db50-11eb-9852-f4095f3e781e.png)
+
+---
+
+## Assert
+
+tuple로 넘겨주면 무조건 true
+
+---
+
+## 변수
+
+1. _var : 내부적으로 사용되는 변수(건들지 말라) -> convention
+2. var_ : class 이름으로 이미 써서 못쓸 때 -> convention
+3. __var : 
+4. __var__ :
+5. _ : 아무 의미가 없는 변수 
+
+`for _ in range(10):`
+
+`color, _, _ = car`
+
  
 
  
