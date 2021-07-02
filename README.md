@@ -249,4 +249,10 @@ print(str(student)) -> 호출방법
 
 ![image](https://user-images.githubusercontent.com/69943167/124217519-76548e00-db33-11eb-90bc-c74fd7a6d2ef.png)
 
+---
+
+## 동적코드 실행(Compile)
+
+`code = compile(""" ~~~ """)`
+
  
