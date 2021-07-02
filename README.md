@@ -263,6 +263,9 @@ print(str(student)) -> 호출방법
 
 **kwargs : 개수 상관없이 input 받기 (dictionary)
 
-## 
+## emulating switch/case with dicts
+
+![image](https://user-images.githubusercontent.com/69943167/124235515-4962a400-db50-11eb-9852-f4095f3e781e.png)
+ 
 
  
