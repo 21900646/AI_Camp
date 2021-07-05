@@ -38,3 +38,12 @@ array([10, 12],
 ```
 **reshape할때는 개수가 맞아야함**
 
+## Shuffle & sort
+```
+A = np.random.randint(1,100,size = (10, 10))
+
+np.random.shuffle(A)
+
+np.sort(A, axis = 1) -> 가로정렬
+np.sort(A, axis = 0) -> list[0]값을 기준으로 세로 정렬
+```
