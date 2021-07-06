@@ -78,4 +78,6 @@ df.style.highlight_null(null_color = "red")
 
 # 글자도 nan대신에 OutofScope라고 써준다.
 df.style.set_na_rep("OutofScope").highlight_null(null_color = "red")
+
+# styling 하기
 ```
