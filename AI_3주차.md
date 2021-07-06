@@ -65,5 +65,8 @@ df5.dropna(how = 'any')
 ```
 
 ## Reshaping
-![image](https://user-images.githubusercontent.com/69943167/124548536-d23b5180-de68-11eb-8704-91643188ac2d.png)
+```
+df = pd.DataFrane({"id":[1,2,3,4,5,6], "raw_grade":['a','b','a','a','e']})
+df["grade"] = df["raw_grade"].astype("category")
+
 
