@@ -68,5 +68,14 @@ df5.dropna(how = 'any')
 ```
 df = pd.DataFrane({"id":[1,2,3,4,5,6], "raw_grade":['a','b','a','a','e']})
 df["grade"] = df["raw_grade"].astype("category")
+```
 
+## Styling the DataFrame
+```
+df.style.highlight_max() -> 11111
+df.style.hightlisht_min(axis=1) -> --------
+df.style.highlight_null(null_color = "red")
 
+# 글자도 nan대신에 OutofScope라고 써준다.
+df.style.set_na_rep("OutofScope").highlight_null(null_color = "red")
+```
