@@ -63,3 +63,7 @@ df5
 # missing data 삭제
 df5.dropna(how = 'any')
 ```
+
+## Reshaping
+![image](https://user-images.githubusercontent.com/69943167/124548536-d23b5180-de68-11eb-8704-91643188ac2d.png)
+
