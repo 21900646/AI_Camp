@@ -90,9 +90,10 @@ df.style.set_na_rep("OutofScope").highlight_null(null_color = "red")
 ```
 
 ## csv 파일 실습
->> thousands는 문자열을 숫자로 바꿔주기 --> ',' 제거
->> encoding은 한글로 바꿔주는 것(만약 안된다면 utf-8말고 딴거 사용)
->> 
+> thousands는 문자열을 숫자로 바꿔주기 --> ',' 제거
+
+> encoding은 한글로 바꿔주는 것(만약 안된다면 utf-8말고 딴거 사용)
+
 ```
 # 파일 읽어오기
 cctv = pd.read_csv('drive/MyDrive/cctv.csv', encoding='utf-8', thousands = ',')
@@ -106,3 +107,24 @@ cctv.sort_values(by='총계', ascending=False).head(5)
 
 # 새로운 목차 지정해서 값 넣기
 cctv['최근증가율'] = (cctv['2020년']+cctv['2019년']+cctv['2018년']) / (cctv['2017년']+cctv['2016년']+cctv['2015년']) * 100
+
+# 필요한 컬럼 인덱스로 모으기
+pop = pd.read_excel('drive/MyDrive/report.xls', header=2)
+pop = pop.iloc[:,[1,3,6,9,13]]
+
+pop = pop.loc[:,['자치구','계','계.1','계.2','65세이상고령자']]
+
+# 컬럼 이름 바꾸기
+pop.rename(columns={'자치구':'구별', '계':'인구수', '계.1':'한국인', '계.2':'외국인', '65세이상고령자':'고령자'}, inplace=True)
+
+# 두개의 데이터셋 합치기 
+# '구분'이라는 columns을 사용하여 합친다.
+data_result = pd.merge(cctv,pop, on='구분')
+```
+
+## 분석
+```
+# 상관관계 분석
+np.corrcoef(data_result['고령자비율'], data_result['소계'])
+
+
