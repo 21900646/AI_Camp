@@ -66,7 +66,7 @@ df5.dropna(how = 'any')
 
 ## Reshaping
 ```
-df = pd.DataFrane({"id":[1,2,3,4,5,6], "raw_grade":['a','b','a','a','e']})
+df = pd.DataFrame({"id":[1,2,3,4,5,6], "raw_grade":['a','b','a','a','e']})
 df["grade"] = df["raw_grade"].astype("category")
 ```
 
@@ -81,3 +81,28 @@ df.style.set_na_rep("OutofScope").highlight_null(null_color = "red")
 
 # styling 하기
 ```
+
+## 한국어 설치
+```
+!sudo apt-get install -y fonts-nanum
+!sudo fc-cache -fv
+!rm ~/.cache/matplotlib -rf
+```
+
+## csv 파일 실습
+>> thousands는 문자열을 숫자로 바꿔주기 --> ',' 제거
+>> encoding은 한글로 바꿔주는 것(만약 안된다면 utf-8말고 딴거 사용)
+>> 
+```
+# 파일 읽어오기
+cctv = pd.read_csv('drive/MyDrive/cctv.csv', encoding='utf-8', thousands = ',')
+cctv.head()
+
+# 목차만 보고싶을 때
+cctv.columns
+
+# 총계라는 목차를 기준으로 내림차순 정렬
+cctv.sort_values(by='총계', ascending=False).head(5)
+
+# 새로운 목차 지정해서 값 넣기
+cctv['최근증가율'] = (cctv['2020년']+cctv['2019년']+cctv['2018년']) / (cctv['2017년']+cctv['2016년']+cctv['2015년']) * 100
