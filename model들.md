@@ -61,6 +61,31 @@ sns.pairplot(sl_df, hue='species')
 from sklearn.model_selection import train_test_split
 
 X_train, X_test, y_train, y_test = train_test_split(sl_df.iloc[:,:1], sl_df.iloc[:, 1:], test_size=0.33)
+
+//모델을 인스턴스화
+from sklearn.linear_model import LogisticRegression
+lr = LogisticRegression()
+
+//특징과 대상 벡터로 배치
+X = x[:, np.newaxis]
+x.shape
+X.shape
+
+//학습시키기
+lr.fit(X_train,y_train)
+
+//모델 그래프 그리기
+import seaborn as sns; sns.set()
+sns.lmplot(x='sepal_length', y='species', data=sl_df, logistic=True)
+
+//학습된 데이터 성능 평가
+from sklearn.metrics import classification_report, confusion_matrix
+print(confusion_matrix(y_train, lr.predict(X_train)))
+print(classification_report(y_train, lr.predict(X_train)))
+
+//테스트 데이터 성능 평가
+print(confusion_matrix(y_test, lr.predict(X_test)))
+print(classification_report(y_test, lr.predict(X_test)))
 ```
 
 
