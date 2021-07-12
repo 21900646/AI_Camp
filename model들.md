@@ -92,8 +92,50 @@ print(classification_report(y_test, lr.predict(X_test)))
 ![image](https://user-images.githubusercontent.com/69943167/125216342-db10a500-e2f8-11eb-92c9-990a2188aa07.png)
 ![image](https://user-images.githubusercontent.com/69943167/125216363-ec59b180-e2f8-11eb-9057-3eeea4d081e6.png)
 
+1. Euclidean distance 계산
+```
+   각각의 거리를 모두 계산한 후, 가까운 거리 k개를 추출
+   D = sqrt((x1-y1)^2 + (x2-y2)^2)
+```
+2. k 결정
 
 
+## SVM(서포트 벡터 머신)
+```
+import numpy as np
+from sklearn import svm
+
+X=np.array([[0,0],[1,1]])
+y=[0,1]
+
+LinearSVM = svm.LinearSVC()
+LinearSVM.fit(X,y)
+
+# 선형 SVM 그려보기
+w = LinearSVM.coef_[0]
+print(w)
+b = LinearSVM.intercept_[0]
+slope = -w[0] / w[1]
+xx = np.linspace(0,1.5)
+yy = slope*xx-b/w[1]
+h0 = plt.plot(xx,yy,'k-', label='Hyperplane')
+plt.scatter(X[:,0], X[:,1], c=y)
+plt.legend()
+plt.show()
+```
+
+## decision tree
+아직 일어나지 않은 일에 대해 미리 판단해야하는 종류의 문제
+- 시각화가 되어, 이해하기 쉽고 해석이 간단하다
+- 데이터 전처리 과정이 간단하다
+- 데이터가 늘어남에 따라 트리의 사용 횟수 log가 증가한다
+- but. 테이터 일반화를 잘 시키지 못한다.(과하게 복잡한 트리)
+
+만드는 방법
+```
+entropy에 의한 방법
+: Ri : 분할 후 i 영역에 속하는 비율
+```
 
 
 
