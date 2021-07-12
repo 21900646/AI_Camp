@@ -88,6 +88,11 @@ print(confusion_matrix(y_test, lr.predict(X_test)))
 print(classification_report(y_test, lr.predict(X_test)))
 ```
 
+## KNN
+![image](https://user-images.githubusercontent.com/69943167/125216342-db10a500-e2f8-11eb-92c9-990a2188aa07.png)
+![image](https://user-images.githubusercontent.com/69943167/125216363-ec59b180-e2f8-11eb-9057-3eeea4d081e6.png)
+
+
 
 
 
