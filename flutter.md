@@ -1,5 +1,7 @@
 # 카운팅앱 만들기
 
+![image](./counting_app.png)
+
 >**step 1. main 함수 만들기**
 >```dart
 >import 'package:flutter/material.dart';
