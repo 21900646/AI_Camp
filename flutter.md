@@ -143,3 +143,6 @@
   
 <br><br>
 ## 추가 
+  
+<img src = "./counting_app1.png" width="20%">
+<img src = "./counting_app2.png" width="20%">
