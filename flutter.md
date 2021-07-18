@@ -144,7 +144,13 @@
   
   
 <br><br>
-## 추가 
+## 추가로 구현해볼것.
   
 <img src = "./counting_app1.png" width="20%">
 <img src = "./counting_app2.png" width="20%">
+  
+```
+hint!
+   bottomNavigatorBar, floatingActionButtonLocation 사용
+   버튼의 색과 바탕색은 변수로 지정해줄 것.(if/else문 사용)
+```
