@@ -151,6 +151,9 @@
   
 ```
 hint!
-   bottomNavigatorBar, floatingActionButtonLocation 사용
+   배경색은 brown, 버튼 색은 amber -> gray
+   icon은 play_arrow 모양 -> pause 모양
+   bottomNavigatorBar을 사용하여 하단바를 만들 것.
+   floatingActionButtonLocation을 사용하여 버튼을 가운데로 두기.
    버튼의 색과 바탕색은 변수로 지정해줄 것.(if/else문 사용)
 ```
