@@ -1,7 +1,6 @@
 # 카운팅앱 만들기
 
-![image](./counting_app.png){: width="100" height="100"}
-<img src = "./counting_app.png" width="40%">
+<img src = "./counting_app.png" width="30%">
 
 >**step 1. main 함수 만들기**
 >```dart
