@@ -212,6 +212,9 @@ hint!
       body: Padding(
         padding: EdgeInsets.fromLTRB(30.0, 40.0, 0.0, 0.0),
         child: Column(
+  
+  
+  ****
           crossAxisAlignment: CrossAxisAlignment.start,
           children: <Widget>[
             Center(
@@ -226,6 +229,9 @@ hint!
               thickness: 0.5,
               endIndent: 30.0,
             ),
+  
+  
+  ****
             Text('NAME',
             style: TextStyle(
               color: Colors.white,
