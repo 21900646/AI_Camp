@@ -34,5 +34,5 @@ if(_icon == Icons.play_arrow) {
       _icon = Icons.play_arrow;
       _color = Colors.amber;
     }
-    ```
+```
 
