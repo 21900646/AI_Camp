@@ -157,3 +157,9 @@ hint!
    floatingActionButtonLocation을 사용하여 버튼을 가운데로 두기.
    버튼의 색과 바탕색은 변수로 지정해줄 것.(if/else문 사용)
 ```
+  
+  
+  
+  
+# 소개 페이지 만들기
+
