@@ -101,6 +101,11 @@
 >        Text('Counter', style: Theme.of(context).textTheme.display1) //이 'counter' 부분 수정하기
 >       ->Text('$_counter', style: Theme.of(context).textTheme.display1)
 >```
+  
+> 추가설명>
+> ```
+> setState의 호출이 발생하면 플러터 프레임워크에 뭔가 상태 변경이 있음을 알려주며, 이로 인해 아래의 build 메서드가 재실행되어 디스플레이에 업데이트된 값이 반영 될 수 있다.
+>```
 
 <br>
 
