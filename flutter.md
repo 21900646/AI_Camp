@@ -322,4 +322,13 @@ hint!
   }
 }
   ```
+  
+ 
+<br>
+
+>**step 3. 사진넣기**
+```
+1.assets라는 파일 만들어서 넣기
+2. pubspec.yaml 파일에서 assets부분 바꾸기
+```
 
