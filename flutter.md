@@ -2,6 +2,8 @@
 
 <img src = "./counting_app.png" width="20%">
 <br><br>
+
+
 >**step 1. main 함수 만들기**
 >```dart
 >import 'package:flutter/material.dart';
