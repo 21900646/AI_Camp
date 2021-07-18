@@ -3,6 +3,8 @@
 ```
 var _icon = Icons.play_arrow;
 var _color = Colors.amber;
+
+style:TextStyle(fontSize:80)
 ```
 
 3. body밑에다가 
@@ -19,7 +21,8 @@ bottomNavigatorBar: BottomAppBar(
 child: Icon(_icon),
 backgroundColor : _color,
 ), floatingActionButtonLocation : FloatingActionButtonLoaction.centerDocked
-);
+
+```
 
 5. if문 사용
 ```
